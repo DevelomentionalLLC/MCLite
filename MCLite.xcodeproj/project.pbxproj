@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		547A11AD15D6E6E4003F09A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11AC15D6E6E4003F09A5 /* UIKit.framework */; };
+		547A11AF15D6E6E4003F09A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11AE15D6E6E4003F09A5 /* Foundation.framework */; };
+		547A11B115D6E6E4003F09A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11B015D6E6E4003F09A5 /* CoreGraphics.framework */; };
+		547A11B715D6E6E4003F09A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547A11B515D6E6E4003F09A5 /* InfoPlist.strings */; };
+		547A11B915D6E6E4003F09A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A11B815D6E6E4003F09A5 /* main.m */; };
+		547A11BD15D6E6E4003F09A5 /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A11BC15D6E6E4003F09A5 /* DLAppDelegate.m */; };
+		547A11C015D6E6E4003F09A5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547A11BE15D6E6E4003F09A5 /* MainStoryboard.storyboard */; };
+		547A11C315D6E6E4003F09A5 /* DLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A11C215D6E6E4003F09A5 /* DLViewController.m */; };
+		547A11CB15D6E6E4003F09A5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11CA15D6E6E4003F09A5 /* SenTestingKit.framework */; };
+		547A11CC15D6E6E4003F09A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11AC15D6E6E4003F09A5 /* UIKit.framework */; };
+		547A11CD15D6E6E4003F09A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A11AE15D6E6E4003F09A5 /* Foundation.framework */; };
+		547A11D515D6E6E4003F09A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547A11D315D6E6E4003F09A5 /* InfoPlist.strings */; };
+		547A11D815D6E6E4003F09A5 /* MCLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A11D715D6E6E4003F09A5 /* MCLiteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		547A11CE15D6E6E4003F09A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547A119F15D6E6E4003F09A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547A11A715D6E6E4003F09A5;
+			remoteInfo = MCLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		547A11A815D6E6E4003F09A5 /* MCLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		547A11AC15D6E6E4003F09A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		547A11AE15D6E6E4003F09A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		547A11B015D6E6E4003F09A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		547A11B415D6E6E4003F09A5 /* MCLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCLite-Info.plist"; sourceTree = "<group>"; };
+		547A11B615D6E6E4003F09A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		547A11B815D6E6E4003F09A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		547A11BA15D6E6E4003F09A5 /* MCLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCLite-Prefix.pch"; sourceTree = "<group>"; };
+		547A11BB15D6E6E4003F09A5 /* DLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		547A11BC15D6E6E4003F09A5 /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
+		547A11BF15D6E6E4003F09A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		547A11C115D6E6E4003F09A5 /* DLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLViewController.h; sourceTree = "<group>"; };
+		547A11C215D6E6E4003F09A5 /* DLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLViewController.m; sourceTree = "<group>"; };
+		547A11C915D6E6E4003F09A5 /* MCLiteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCLiteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		547A11CA15D6E6E4003F09A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		547A11D215D6E6E4003F09A5 /* MCLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCLiteTests-Info.plist"; sourceTree = "<group>"; };
+		547A11D415D6E6E4003F09A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		547A11D615D6E6E4003F09A5 /* MCLiteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCLiteTests.h; sourceTree = "<group>"; };
+		547A11D715D6E6E4003F09A5 /* MCLiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLiteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		547A11A515D6E6E4003F09A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11AD15D6E6E4003F09A5 /* UIKit.framework in Frameworks */,
+				547A11AF15D6E6E4003F09A5 /* Foundation.framework in Frameworks */,
+				547A11B115D6E6E4003F09A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547A11C515D6E6E4003F09A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11CB15D6E6E4003F09A5 /* SenTestingKit.framework in Frameworks */,
+				547A11CC15D6E6E4003F09A5 /* UIKit.framework in Frameworks */,
+				547A11CD15D6E6E4003F09A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		547A119D15D6E6E4003F09A5 = {
+			isa = PBXGroup;
+			children = (
+				547A11B215D6E6E4003F09A5 /* MCLite */,
+				547A11D015D6E6E4003F09A5 /* MCLiteTests */,
+				547A11AB15D6E6E4003F09A5 /* Frameworks */,
+				547A11A915D6E6E4003F09A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		547A11A915D6E6E4003F09A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				547A11A815D6E6E4003F09A5 /* MCLite.app */,
+				547A11C915D6E6E4003F09A5 /* MCLiteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		547A11AB15D6E6E4003F09A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				547A11AC15D6E6E4003F09A5 /* UIKit.framework */,
+				547A11AE15D6E6E4003F09A5 /* Foundation.framework */,
+				547A11B015D6E6E4003F09A5 /* CoreGraphics.framework */,
+				547A11CA15D6E6E4003F09A5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		547A11B215D6E6E4003F09A5 /* MCLite */ = {
+			isa = PBXGroup;
+			children = (
+				547A11BB15D6E6E4003F09A5 /* DLAppDelegate.h */,
+				547A11BC15D6E6E4003F09A5 /* DLAppDelegate.m */,
+				547A11BE15D6E6E4003F09A5 /* MainStoryboard.storyboard */,
+				547A11C115D6E6E4003F09A5 /* DLViewController.h */,
+				547A11C215D6E6E4003F09A5 /* DLViewController.m */,
+				547A11B315D6E6E4003F09A5 /* Supporting Files */,
+			);
+			path = MCLite;
+			sourceTree = "<group>";
+		};
+		547A11B315D6E6E4003F09A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				547A11B415D6E6E4003F09A5 /* MCLite-Info.plist */,
+				547A11B515D6E6E4003F09A5 /* InfoPlist.strings */,
+				547A11B815D6E6E4003F09A5 /* main.m */,
+				547A11BA15D6E6E4003F09A5 /* MCLite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		547A11D015D6E6E4003F09A5 /* MCLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				547A11D615D6E6E4003F09A5 /* MCLiteTests.h */,
+				547A11D715D6E6E4003F09A5 /* MCLiteTests.m */,
+				547A11D115D6E6E4003F09A5 /* Supporting Files */,
+			);
+			path = MCLiteTests;
+			sourceTree = "<group>";
+		};
+		547A11D115D6E6E4003F09A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				547A11D215D6E6E4003F09A5 /* MCLiteTests-Info.plist */,
+				547A11D315D6E6E4003F09A5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		547A11A715D6E6E4003F09A5 /* MCLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547A11DB15D6E6E4003F09A5 /* Build configuration list for PBXNativeTarget "MCLite" */;
+			buildPhases = (
+				547A11A415D6E6E4003F09A5 /* Sources */,
+				547A11A515D6E6E4003F09A5 /* Frameworks */,
+				547A11A615D6E6E4003F09A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCLite;
+			productName = MCLite;
+			productReference = 547A11A815D6E6E4003F09A5 /* MCLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		547A11C815D6E6E4003F09A5 /* MCLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547A11DE15D6E6E4003F09A5 /* Build configuration list for PBXNativeTarget "MCLiteTests" */;
+			buildPhases = (
+				547A11C415D6E6E4003F09A5 /* Sources */,
+				547A11C515D6E6E4003F09A5 /* Frameworks */,
+				547A11C615D6E6E4003F09A5 /* Resources */,
+				547A11C715D6E6E4003F09A5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				547A11CF15D6E6E4003F09A5 /* PBXTargetDependency */,
+			);
+			name = MCLiteTests;
+			productName = MCLiteTests;
+			productReference = 547A11C915D6E6E4003F09A5 /* MCLiteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		547A119F15D6E6E4003F09A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DL;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jeffry Bobb";
+			};
+			buildConfigurationList = 547A11A215D6E6E4003F09A5 /* Build configuration list for PBXProject "MCLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 547A119D15D6E6E4003F09A5;
+			productRefGroup = 547A11A915D6E6E4003F09A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				547A11A715D6E6E4003F09A5 /* MCLite */,
+				547A11C815D6E6E4003F09A5 /* MCLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		547A11A615D6E6E4003F09A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11B715D6E6E4003F09A5 /* InfoPlist.strings in Resources */,
+				547A11C015D6E6E4003F09A5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547A11C615D6E6E4003F09A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11D515D6E6E4003F09A5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		547A11C715D6E6E4003F09A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		547A11A415D6E6E4003F09A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11B915D6E6E4003F09A5 /* main.m in Sources */,
+				547A11BD15D6E6E4003F09A5 /* DLAppDelegate.m in Sources */,
+				547A11C315D6E6E4003F09A5 /* DLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547A11C415D6E6E4003F09A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547A11D815D6E6E4003F09A5 /* MCLiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		547A11CF15D6E6E4003F09A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547A11A715D6E6E4003F09A5 /* MCLite */;
+			targetProxy = 547A11CE15D6E6E4003F09A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		547A11B515D6E6E4003F09A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547A11B615D6E6E4003F09A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		547A11BE15D6E6E4003F09A5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547A11BF15D6E6E4003F09A5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		547A11D315D6E6E4003F09A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547A11D415D6E6E4003F09A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		547A11D915D6E6E4003F09A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		547A11DA15D6E6E4003F09A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		547A11DC15D6E6E4003F09A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCLite/MCLite-Prefix.pch";
+				INFOPLIST_FILE = "MCLite/MCLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		547A11DD15D6E6E4003F09A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCLite/MCLite-Prefix.pch";
+				INFOPLIST_FILE = "MCLite/MCLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		547A11DF15D6E6E4003F09A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MCLite.app/MCLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCLite/MCLite-Prefix.pch";
+				INFOPLIST_FILE = "MCLiteTests/MCLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		547A11E015D6E6E4003F09A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MCLite.app/MCLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCLite/MCLite-Prefix.pch";
+				INFOPLIST_FILE = "MCLiteTests/MCLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		547A11A215D6E6E4003F09A5 /* Build configuration list for PBXProject "MCLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547A11D915D6E6E4003F09A5 /* Debug */,
+				547A11DA15D6E6E4003F09A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547A11DB15D6E6E4003F09A5 /* Build configuration list for PBXNativeTarget "MCLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547A11DC15D6E6E4003F09A5 /* Debug */,
+				547A11DD15D6E6E4003F09A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		547A11DE15D6E6E4003F09A5 /* Build configuration list for PBXNativeTarget "MCLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547A11DF15D6E6E4003F09A5 /* Debug */,
+				547A11E015D6E6E4003F09A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 547A119F15D6E6E4003F09A5 /* Project object */;
+}
