@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TapForTap.h"
 
 @interface DLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong)NSNumber *launchCount;
+@property (nonatomic, strong)NSDictionary *defaultDictionary;
 
 @end

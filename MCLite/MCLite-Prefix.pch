@@ -11,4 +11,19 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "UILabel+animations.h"
+    #import "NSString+addons.h"
+    #import "UIButton+addons.h"
+    #import "UIFont+MC_Addons.h"
+    #import "UIImage+addons.h"
+    #import "UIView+Animations.h"
 #endif
+#define KEY_LAUNCH_COUNT_KEY @"LaunchCount.int"
+#define KEY_FIRST_LAUNCH_MESSAGE_KEY @"Develomentional_First_Launch.string"
+#define KEY_THANK_YOU_FOR_PURCHASE_KEY @"Develomentional_Thank_You_For_Puschase.string"
+#define KEY_GREENTXT_KEY @"green.textfield"
+#define KEY_DRYTXT_KEY @"dry.textfield"
+#define KEY_ANSWER_KEY @"answer.string"
+#define KEY_TO_DRY_KEY @"todry.string"
+#define KEY_IS_DRY_KEY @"isdry.string"
+#define KEY_NOT_DRY_KEY @"notdry.string"
