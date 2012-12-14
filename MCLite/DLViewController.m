@@ -9,7 +9,10 @@
 
 #import "DLViewController.h"
 #import "TapForTap.h"
-@interface DLViewController ()<UITextFieldDelegate,TapForTapAdViewDelegate>
+#import <RevMobAds/RevMobAds.h>
+
+#import <QuartzCore/QuartzCore.h>
+@interface DLViewController ()<UITextFieldDelegate,TapForTapAdViewDelegate, RevMobAdsDelegate>
 @property (nonatomic, strong)NSString *answerString;
 @end
 
@@ -71,6 +74,7 @@
     [UILabel dbounceLabel:self.labelAnswer withDuration:.5];
     [UILabel dbounceLabel:self.labelPercentage withDuration:.5];
     [UIView dbounceView:self.buttonCalculate withDuration:.5];
+       
 }
 #pragma mark - validation
 -(void)ValidatCalculation{
@@ -156,6 +160,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+           self.buttonCalculate.layer.cornerRadius = 5;
+         self.buttonCalculate.clipsToBounds = YES;
     [self setFont];
     [self setText];
     [self animateLabels];
@@ -163,7 +169,7 @@
     [self restoreTextFieldsOnly];
     [self restoreAnswerStringOnly];
     self.labelAnswer.text = self.answerString;
-    
+    [RevMobAds showPopupWithDelegate:nil];
     [self changeColorsOfLabels];
         
     self.navigationItem.titleView = MCView;

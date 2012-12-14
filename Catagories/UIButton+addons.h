@@ -11,4 +11,6 @@
 @interface UIButton (addons)
 -(void)DL_applyStyleToButtonWithFontSize:(float)Fsize;
 +(void)bounceButton:(UIButton *)button;
++(void)roundButtonCornersDefaultRadius:(UIButton*)button;
++(void)roundButtonCorners:(UIButton *)button withRadius:(float)radius;
 @end

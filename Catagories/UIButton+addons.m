@@ -9,6 +9,7 @@
 #import "UIButton+addons.h"
 #import "UIView+Animations.h"
 #import "UIFont+MC_Addons.h"
+#import <QuartzCore/QuartzCore.h>
 @implementation UIButton (addons)
 -(void)DL_applyStyleToButtonWithFontSize:(float)Fsize{
     self.titleLabel.font = [UIFont DL_FontWithSize:Fsize];
@@ -23,6 +24,19 @@
 +(void)bounceButton:(UIButton *)button{
     [UIView dbounceView:button withDuration:.5];
 
+}
++(void)roundButtonCornersDefaultRadius:(UIButton*)button
+{
+    button.layer.cornerRadius = 6;
+    button.clipsToBounds = YES;
+    
+    
+}
++(void)roundButtonCorners:(UIButton *)button withRadius:(float)radius
+{
+    button.layer.cornerRadius = radius;
+    button.clipsToBounds = YES;
+    
 }
 
 

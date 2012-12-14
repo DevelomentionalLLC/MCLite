@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIButton+addons.h"
 @interface DLHistoryViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *viewTitleLabel;
 @property (weak, nonatomic) IBOutlet UIView *viewTitle;

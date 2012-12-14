@@ -73,6 +73,8 @@ UIAlertView *alert = [[UIAlertView alloc]
     [self animateLabels];
     self.navigationItem.titleView = viewTitle;
     [self yearAlert];
+    [UIButton roundButtonCorners:self.button_To_iPhone withRadius:8];
+    [UIButton roundButtonCorners:self.button_To_Universal_View withRadius:8];
 
 }
 

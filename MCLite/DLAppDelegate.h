@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TapForTap.h"
-
+#import <RevMobAds/RevMobAds.h>
 @interface DLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -58,6 +58,10 @@
     [UIView dbounceView:self.button_DevSite withDuration:.5];
     [UIView dbounceView:self.button_MCSite withDuration:.5];
     [UIView dbounceView:self.button_RC withDuration:.5];
+    [UIButton roundButtonCorners:self.button_DevSite withRadius:8];
+    [UIButton roundButtonCorners:self.button_MCSite withRadius:8];
+    [UIButton roundButtonCorners:self.button_RC withRadius:8];
+    
 }
 
 - (void)viewDidLoad

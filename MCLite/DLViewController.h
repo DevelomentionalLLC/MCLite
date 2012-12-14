@@ -12,7 +12,9 @@
 #import "UIButton+addons.h"
 #import "UIFont+MC_Addons.h"
 #import "UIImage+addons.h"
+#import <RevMobAds/RevMobAds.h>
 #import "UIView+Animations.h"
+#import <QuartzCore/QuartzCore.h>
 @interface DLViewController : UIViewController
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *MCView;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *MCViewLabel;

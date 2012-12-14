@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIButton+addons.h"
 @interface DLInfoViewController : UIViewController
 - (IBAction)buttonWeb:(id)sender;
 - (IBAction)MCSite:(id)sender;

@@ -7,14 +7,15 @@
 //
 
 #import "DLAppDelegate.h"
-
+#import "Appirater.h"
 @implementation DLAppDelegate
 @synthesize launchCount = _launchCount;
 @synthesize defaultDictionary = _defaultDictionary;
 
 -(NSDictionary*)defaultDictionary{
     if (!_defaultDictionary) {
-        _defaultDictionary = [[NSDictionary alloc]initWithObjectsAndKeys:@"The sample is dry",KEY_IS_DRY_KEY,@"The sample in not dry",KEY_NOT_DRY_KEY,@"The sample is to dry",KEY_TO_DRY_KEY,@"0",KEY_GREENTXT_KEY,@"0",KEY_DRYTXT_KEY,@"0",KEY_ANSWER_KEY, @"Welcome to Moisture Calculator",KEY_FIRST_LAUNCH_MESSAGE_KEY,@"Thank you for your purchase. ",KEY_THANK_YOU_FOR_PURCHASE_KEY,@"0",_launchCount, nil ];
+            // _defaultDictionary = [[NSDictionary alloc]initWithObjectsAndKeys:@"The sample is dry",KEY_IS_DRY_KEY,@"The sample in not dry",KEY_NOT_DRY_KEY,@"The sample is to dry",KEY_TO_DRY_KEY,@"0",KEY_GREENTXT_KEY,@"0",KEY_DRYTXT_KEY,@"0",KEY_ANSWER_KEY, @"Welcome to Moisture Calculator",KEY_FIRST_LAUNCH_MESSAGE_KEY,@"Thank you for your purchase. ",KEY_THANK_YOU_FOR_PURCHASE_KEY,@"0",_launchCount, nil ];
+        _defaultDictionary =[[NSDictionary alloc]initWithObjectsAndKeys:@"The sample is dry",KEY_IS_DRY_KEY,@"The sample in not dry",KEY_NOT_DRY_KEY,@"The sample is to dry",KEY_TO_DRY_KEY, @"Welcome to Moisture Calculator",KEY_FIRST_LAUNCH_MESSAGE_KEY,@"Thank you for your purchase. ",KEY_THANK_YOU_FOR_PURCHASE_KEY,nil];
     }
     
     NSLog(@"%@",_launchCount);
@@ -31,10 +32,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TapForTap setDefaultAppId: @"3654dbc0-c6fe-012f-fb53-4040d804a637"];
-    [TapForTap checkIn];
+        [RevMobAds startSessionWithAppID:@"502d6dba72acb34000000010"];
+         [[NSUserDefaults standardUserDefaults] registerDefaults:self.defaultDictionary];
+    _launchCount =  [[NSUserDefaults standardUserDefaults] valueForKey:KEY_LAUNCH_COUNT_KEY];
+    
+    int count = self.launchCount.intValue;
+    int nCount = count + 1;
+    self.launchCount = [[NSNumber alloc] initWithInt:nCount];
+    [[NSUserDefaults standardUserDefaults] setValue:self.launchCount forKey:KEY_LAUNCH_COUNT_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"%@",self.launchCount);
+    if (self.launchCount.intValue == 16) {
+        [Appirater rateApp];
+    }
+    if (self.launchCount.intValue == 1) {
+        
+        [self showAlert];
+    }
 
-       
+    [Appirater appLaunched:YES];
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert |UIRemoteNotificationTypeSound)];
    
     
@@ -46,22 +62,7 @@
 }
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    
-    [[NSUserDefaults standardUserDefaults] registerDefaults:self.defaultDictionary];
-    _launchCount =  [[NSUserDefaults standardUserDefaults] valueForKey:KEY_LAUNCH_COUNT_KEY];
-    
-    int count = self.launchCount.intValue;
-    int nCount = count + 1;
-    self.launchCount = [[NSNumber alloc] initWithInt:nCount];
-    [[NSUserDefaults standardUserDefaults] setValue:self.launchCount forKey:KEY_LAUNCH_COUNT_KEY];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    NSLog(@"%@",self.launchCount);
-      
-    if (self.launchCount.intValue == 1) {
-        
-        [self showAlert];
-    }
-    NSLog(@"My Device Token is %@", deviceToken);
+     NSLog(@"My Device Token is %@", deviceToken);
 
     
 }
@@ -87,13 +88,22 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+        [RevMobAds showFullscreenAd];
+    [TapForTap setDefaultAppId: @"3654dbc0-c6fe-012f-fb53-4040d804a637"];
+    [TapForTap checkIn];
+
+
+    
+   
         //[MKiCloudSync start];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self setDefaultDictionary:nil];
+    [self setLaunchCount:nil];
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 -(void)showAlert{
     NSString *message = [[NSUserDefaults standardUserDefaults]stringForKey:KEY_FIRST_LAUNCH_MESSAGE_KEY];
